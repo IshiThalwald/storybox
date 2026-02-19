@@ -31,5 +31,5 @@ jobs:
         context: .
         push: true
         tags: |
-          ghcr.io/${{ github.repository_owner }}/storybox:latest
-          ghcr.io/${{ github.repository_owner }}/storybox:${{ github.sha }}
+          ghcr.io/${{ github.repository_owner | lower }}/storybox:latest
+          ghcr.io/${{ github.repository_owner | lower }}/storybox:${{ github.sha }}
